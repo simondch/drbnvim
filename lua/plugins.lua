@@ -49,5 +49,6 @@ return {
         event = "VeryLazy",
         config = function() require("nvim-surround").setup({}) end
     }, {"akinsho/toggleterm.nvim", version = "*", config = true},
-    {'rmagatti/auto-session'}
+    {'rmagatti/auto-session'},
+    { "folke/trouble.nvim"}
 }

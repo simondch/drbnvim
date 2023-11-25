@@ -26,3 +26,14 @@ cmp.setup({
         ['<C-d>'] = cmp.mapping.scroll_docs(4)
     })
 })
+
+require('trouble').setup({
+  mode = "document_diagnostics"
+})
+
+-- Diagnostic settings
+vim.diagnostic.config {
+  virtual_text = false,
+  signs = true,
+  underline = true,
+}

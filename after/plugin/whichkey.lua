@@ -85,7 +85,11 @@ local mappings = {
         S = {
             "<cmd>Telescope lsp_dynamic_workspace_symbols<cr>",
             "Workspace Symbols"
+        },
+        t = {
+          "<cmd>TroubleToggle<cr>", "Trouble"
         }
+
     },
     t = {
         name = "Terminal",
@@ -101,4 +105,3 @@ local mappings = {
 
 which_key.setup(setup)
 which_key.register(mappings, opts)
--- require("which-key").setup()
