@@ -100,6 +100,17 @@ local mappings = {
         -- Play with size according to your needs.
         h = {"<cmd>ToggleTerm size=10 direction=horizontal<cr>", "Horizontal"}, -- Horizontal Terminal,
         v = {"<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical"} -- Vertical Terminal
+    },
+    h = {
+      name = "GitSigns",
+      b = {"<cmd>Gitsigns blame_line<cr>", "Blame line"},
+      d = {"<cmd>Gitsigns diffthis<cr>", "Diff this"},
+      s = {"<cmd>Gitsigns stage_hunk<cr>", "Stage hunk"},
+      S = {"<cmd>Gitsigns stage_buffer<cr>", "Stage buffer"},
+      u = {"<cmd>Gitsigns undo_stage_hunk<cr>", "Undo Stage hunk"},
+      r = {"<cmd>Gitsigns reset_hunk<cr>", "Reset hunk"},
+      R = {"<cmd>Gitsigns reset_buffer<cr>", "Reset buffer"},
+      p = {"<cmd>Gitsigns preview_hunk<cr>", "Preview hunk"}
     }
 }
 
