@@ -57,6 +57,7 @@ local mappings = {
 	["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
 	["m"] = { "<cmd>Mason<cr>", "Mason UI for Lsp" },
 	["r"] = { "<cmd>lua vim.lsp.buf.format{async=true}<cr>", "Reformat Code" },
+  ["g"] = { "<cmd>Telescope telescope-tabs list_tabs<cr>", "Goto Tabs"},
 	f = {
 		name = "File Search",
 		c = { "<cmd>Telescope colorscheme<cr>", "Colorscheme" },
@@ -112,6 +113,7 @@ local mappings = {
 			o = { "<cmd>DiffviewOpen<cr>", "Open Diffview" },
 		},
 	},
+
 }
 
 which_key.setup(setup)

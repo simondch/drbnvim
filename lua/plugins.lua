@@ -118,4 +118,14 @@ return {
 	{ "akinsho/toggleterm.nvim", version = "*", config = true },
 	{ "rmagatti/auto-session" },
 	{ "folke/trouble.nvim" },
+	{ "danymat/neogen", config = true },
+  {
+    "iamcco/markdown-preview.nvim",
+    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+    ft = { "markdown" },
+    build = function() vim.fn["mkdp#util#install"]() end,
+},
+"prichrd/netrw.nvim",
+"LukasPietzschmann/telescope-tabs",
+{"~/drbn/nvim/nvim-yatm", dir="~/drbn/nvim/nvim-yatm"}
 }
